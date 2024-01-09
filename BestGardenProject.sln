@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F53A03A-9708-4416-97BB-899C531BD4EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BBAEC241-E25C-4D28-9020-CB4D64609727}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestGarden.Domain", "src\BestGarden.Domain\BestGarden.Domain.csproj", "{4F41975A-AB4C-4604-9D27-106B9D88E021}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{336ADF38-84B8-42CB-B057-5476F6EA65AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestGarden.Infrastructure", "src\BestGarden.Infrastructure\BestGarden.Infrastructure.csproj", "{50A9B679-1A50-491B-A29A-549B4819D9C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{AADB52CA-1524-4C71-BB8D-DBF3E77AF570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestGarden.API", "src\BestGarden.API\BestGarden.API.csproj", "{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestGarden.Application", "src\BestGarden.Application\BestGarden.Application.csproj", "{244B6A54-A831-4811-B7A3-6B0D979A83FB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BestGarden.UI", "src\BestGarden.UI\", "{6638CA13-7F2B-405E-9A40-94056B53173C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_65295"
+		Debug.AspNetCompiler.PhysicalPath = "src\BestGarden.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65295\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_65295"
+		Release.AspNetCompiler.PhysicalPath = "src\BestGarden.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65295\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "65295"
+		SlnRelativePath = "src\BestGarden.UI\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F41975A-AB4C-4604-9D27-106B9D88E021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F41975A-AB4C-4604-9D27-106B9D88E021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F41975A-AB4C-4604-9D27-106B9D88E021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F41975A-AB4C-4604-9D27-106B9D88E021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A9B679-1A50-491B-A29A-549B4819D9C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A9B679-1A50-491B-A29A-549B4819D9C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A9B679-1A50-491B-A29A-549B4819D9C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A9B679-1A50-491B-A29A-549B4819D9C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244B6A54-A831-4811-B7A3-6B0D979A83FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244B6A54-A831-4811-B7A3-6B0D979A83FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244B6A54-A831-4811-B7A3-6B0D979A83FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244B6A54-A831-4811-B7A3-6B0D979A83FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6638CA13-7F2B-405E-9A40-94056B53173C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6638CA13-7F2B-405E-9A40-94056B53173C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6638CA13-7F2B-405E-9A40-94056B53173C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6638CA13-7F2B-405E-9A40-94056B53173C}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBAEC241-E25C-4D28-9020-CB4D64609727} = {4F53A03A-9708-4416-97BB-899C531BD4EA}
+		{4F41975A-AB4C-4604-9D27-106B9D88E021} = {BBAEC241-E25C-4D28-9020-CB4D64609727}
+		{336ADF38-84B8-42CB-B057-5476F6EA65AF} = {4F53A03A-9708-4416-97BB-899C531BD4EA}
+		{50A9B679-1A50-491B-A29A-549B4819D9C8} = {336ADF38-84B8-42CB-B057-5476F6EA65AF}
+		{AADB52CA-1524-4C71-BB8D-DBF3E77AF570} = {4F53A03A-9708-4416-97BB-899C531BD4EA}
+		{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195} = {AADB52CA-1524-4C71-BB8D-DBF3E77AF570}
+		{244B6A54-A831-4811-B7A3-6B0D979A83FB} = {BBAEC241-E25C-4D28-9020-CB4D64609727}
+		{6638CA13-7F2B-405E-9A40-94056B53173C} = {AADB52CA-1524-4C71-BB8D-DBF3E77AF570}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F40725C-F5CB-41DE-AB1E-2247772D3AAE}
+	EndGlobalSection
+EndGlobal

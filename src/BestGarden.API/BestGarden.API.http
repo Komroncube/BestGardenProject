@@ -1,0 +1,6 @@
+@BestGarden.API_HostAddress = http://localhost:5207
+
+GET {{BestGarden.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

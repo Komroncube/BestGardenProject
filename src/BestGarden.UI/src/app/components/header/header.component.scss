@@ -1,0 +1,34 @@
+$green: #245e62;
+$green-hover: #3a6e72;
+
+* {
+    color: $green;
+}
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 75px;
+        height: 35px;
+    }
+    p {
+        text-align: center;
+        font-size: 0.5em;
+    }
+}
+.top-header {
+    display: flex;
+    align-items: center;
+}
+.input-group {
+    border-color: $green;
+    height: 50px;
+}
+.input-group button {
+    background-color: $green;
+    
+}
+.input-group button:hover {
+    background-color: $green-hover;
+}

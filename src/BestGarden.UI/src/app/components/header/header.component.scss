@@ -4,6 +4,7 @@ $green-hover: #3a6e72;
 * {
     color: $green;
 }
+
 .logo-text {
     display: flex;
     flex-direction: column;
@@ -23,7 +24,8 @@ $green-hover: #3a6e72;
 }
 .input-group {
     border-color: $green;
-    height: 50px;
+    height: 40px;
+    margin-right: 20px;
 }
 .input-group button {
     background-color: $green;
@@ -31,4 +33,30 @@ $green-hover: #3a6e72;
 }
 .input-group button:hover {
     background-color: $green-hover;
+}
+.connection {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+.connection p {
+    font-size: 0.5em;
+}
+.register {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.phone-call {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    gap: 5px;
+}
+.number-day p {
+    margin:0;
+}
+
+i {
+    color: $green;
 }

@@ -1,16 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BestGarden.Domain.Models;
+﻿using BestGarden.Domain;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace BestGarden.Infrastructure;
 public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> opions) : base(opions) { }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        base.OnModelCreating(modelBuilder);
+    }
+
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        foreach (var entry in ChangeTracker.Entries<BaseDomainEntity>())
+        {
+            entry.Entity.UpdatedAt = DateTime.Now;
+
+            if (entry.State == EntityState.Added)
+            {
+                entry.Entity.CreatedAt = DateTime.Now;
+            }
+        }
+        return base.SaveChangesAsync(cancellationToken);
+    }
     public virtual DbSet<BasketItem> BasketItems { get; set; }
     public virtual DbSet<Catalog> Catalogs { get; set; }
     public virtual DbSet<Order> Orders { get; set; }

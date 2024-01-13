@@ -1,6 +1,6 @@
 ﻿namespace BestGarden.Domain.Models;
 
-public class BasketItems : BaseDomainEntity
+public class BasketItem : BaseDomainEntity
 {
     public int UserId { get; set; }
     public User User { get; set; }

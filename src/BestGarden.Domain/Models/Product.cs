@@ -1,5 +1,5 @@
 ﻿namespace BestGarden.Domain.Models;
-public class Product
+public class Product : BaseDomainEntity
 {
     public string Name { get; set; }
     public string Description { get; set; }

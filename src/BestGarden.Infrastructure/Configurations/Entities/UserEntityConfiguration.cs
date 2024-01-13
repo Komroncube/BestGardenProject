@@ -47,5 +47,3 @@ internal class UserEntityConfiguration : IEntityTypeConfiguration<User>
             .OnDelete(DeleteBehavior.Cascade);
     }
 }
-{
-}

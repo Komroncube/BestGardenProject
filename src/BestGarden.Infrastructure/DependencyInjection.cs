@@ -24,7 +24,7 @@ public static class DependencyInjection
                     .UseSqlServer(connectionString);
         });
 
-        services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+        //services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped<IBasketItemRepository, BasketItemRepository>();
         services.AddScoped<ICatalogRepository, CatalogRepository>();
         services.AddScoped<IOrderItemRepository, OrderItemRepository>();

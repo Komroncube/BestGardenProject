@@ -19,6 +19,7 @@ internal class ProductEntityConfiguration : IEntityTypeConfiguration<Product>
             .IsRequired();
 
         builder.Property(x => x.Price)
+            .HasPrecision(2)
             .IsRequired();
 
         builder.Property(x => x.ImagePath)

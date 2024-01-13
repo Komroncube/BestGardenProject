@@ -9,4 +9,7 @@ public class User : BaseDomainEntity
     public string PhoneNumber { get; set; }
     public LoyaltyStatus LoyaltyDiscountStatus { get; set; } = LoyaltyStatus.None;
     public bool IsAdmin { get; set; } = false;
+
+    public virtual ICollection<Order> Orders { get; set; }
+    public virtual ICollection<BasketItem> BasketItems { get; set; }
 }

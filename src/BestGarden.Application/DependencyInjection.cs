@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using BestGarden.Application.Services;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -10,6 +11,7 @@ public static class DependencyInjection
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddMediatR(Assembly.GetExecutingAssembly());
+        services.AddTransient<IFileService, FileService>();
         return services;
     }
     

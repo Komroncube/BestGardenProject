@@ -14,6 +14,7 @@ internal class BasketItemEntityConfiguration : IEntityTypeConfiguration<BasketIt
             .IsRequired();
 
         builder.Property(x => x.Quantity)
+            .HasDefaultValue(1)
             .IsRequired();
 
         builder.Property(x => x.UserId)

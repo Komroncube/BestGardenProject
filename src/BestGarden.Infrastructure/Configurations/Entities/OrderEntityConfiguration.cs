@@ -22,6 +22,9 @@ internal class OrderEntityConfiguration : IEntityTypeConfiguration<Order>
 
         builder.Property(x => x.OrderStatus)
             .IsRequired();
+        builder.Property(x => x.Address)
+            .HasMaxLength(200)
+            .IsRequired();
 
         builder.HasMany(x => x.OrderItems)
             .WithOne(x => x.Order)

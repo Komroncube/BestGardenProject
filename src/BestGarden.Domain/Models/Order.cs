@@ -9,6 +9,7 @@ public class Order : BaseDomainEntity
     public DateTime OrderDate { get; set; } = DateTime.Now;
     public DeliveryType DeliveryType { get; set; }
     public OrderStatus OrderStatus { get; set; } = OrderStatus.Checking;
+    public string Address { get; set; }
 
     public virtual ICollection<OrderItem> OrderItems { get; set; }
 }

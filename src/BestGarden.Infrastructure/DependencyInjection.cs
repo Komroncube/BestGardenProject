@@ -1,4 +1,5 @@
-﻿using BestGarden.Infrastructure.Repositories;
+﻿using System.Text.Json.Serialization;
+using BestGarden.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,6 +32,10 @@ public static class DependencyInjection
         services.AddScoped<IOrderRepository, OrderRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddControllersWithViews()
+            .AddJsonOptions(x => x.JsonSerializerOptions
+                .ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
 
         return services;
     }

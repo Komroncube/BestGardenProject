@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
-
-namespace BestGarden.Application.UseCases.Users.Commands.CreateUser;
+﻿namespace BestGarden.Application.UseCases.Users.Commands.CreateUser;
 public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand, User>
 {
     private readonly IUserRepository _userRepository;

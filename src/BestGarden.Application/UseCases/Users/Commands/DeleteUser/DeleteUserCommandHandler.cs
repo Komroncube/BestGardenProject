@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BestGarden.Application.UseCases.Users.Commands.DeleteUser;
+﻿namespace BestGarden.Application.UseCases.Users.Commands.DeleteUser;
 public class DeleteUserCommandHandler : ICommandHandler<DeleteUserCommand, bool>
 {
     private readonly IUserRepository _userRepository;

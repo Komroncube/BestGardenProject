@@ -39,7 +39,7 @@ public class UsersController : ControllerBase
 
     // POST api/<UsersController>
     [HttpPost]
-    public async ValueTask<User> Post([FromBody] UserDTO userDto)
+    public async ValueTask<User> Post([FromForm] UserDTO userDto)
     {
         return await _mediator.Send(new CreateUserCommand { UserDto = userDto });
     }

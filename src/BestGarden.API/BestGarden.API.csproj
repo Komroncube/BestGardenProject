@@ -20,4 +20,9 @@
     <ProjectReference Include="..\BestGarden.Infrastructure\BestGarden.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\media\images\" />
+    <Folder Include="wwwroot\media\" />
+  </ItemGroup>
+
 </Project>

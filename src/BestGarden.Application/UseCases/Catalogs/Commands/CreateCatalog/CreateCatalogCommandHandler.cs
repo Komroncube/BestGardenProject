@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
-
-namespace BestGarden.Application.UseCases.Catalogs.Commands.CreateCatalog;
+﻿namespace BestGarden.Application.UseCases.Catalogs.Commands.CreateCatalog;
 public class CreateCatalogCommandHandler : ICommandHandler<CreateCatalogCommand, Catalog>
 {
     private readonly ICatalogRepository _catalogRepository;

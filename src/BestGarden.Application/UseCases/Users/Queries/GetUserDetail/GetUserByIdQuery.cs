@@ -1,6 +1,8 @@
-﻿namespace BestGarden.Application.UseCases.Users.Queries.GetUserDetail;
+﻿using BestGarden.Application.DTOs.Users;
 
-public class GetUserByIdQuery : IQuery<User>
+namespace BestGarden.Application.UseCases.Users.Queries.GetUserDetail;
+
+public class GetUserByIdQuery : IQuery<UserDTO>
 {
     public int Id { get; set; }
 }

@@ -8,5 +8,5 @@ public class UserDTO
     public string Password { get; set; }
     public string PhoneNumber { get; set; }
     public LoyaltyStatus LoyaltyDiscountStatus { get; set; } = LoyaltyStatus.None;
-    public bool IsAdmin { get; set; }
+    public decimal TotalSpent { get; set; }
 }

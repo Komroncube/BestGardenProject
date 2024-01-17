@@ -3,12 +3,9 @@ using BestGarden.Application.UseCases.Products.Commands.CreateProduct;
 using BestGarden.Application.UseCases.Products.Commands.DeleteProduct;
 using BestGarden.Application.UseCases.Products.Queries.GetProductDetail;
 using BestGarden.Application.UseCases.Products.Queries.GetProductList;
-using BestGarden.Domain.Models;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
 
 namespace BestGarden.API.Controllers;
-[Route("api/[controller]/[action]")]
+[Route("api/[controller]")]
 [ApiController]
 public class ProductsController : ControllerBase
 {

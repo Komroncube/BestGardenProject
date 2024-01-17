@@ -4,14 +4,11 @@ using BestGarden.Application.UseCases.Users.Commands.DeleteUser;
 using BestGarden.Application.UseCases.Users.Commands.UpdateUser;
 using BestGarden.Application.UseCases.Users.Queries.GetUserDetail;
 using BestGarden.Application.UseCases.Users.Queries.GetUserList;
-using BestGarden.Domain.Models;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace BestGarden.API.Controllers;
-[Route("api/[controller]/[action]")]
+[Route("api/[controller]")]
 [ApiController]
 public class UsersController : ControllerBase
 {
@@ -32,7 +29,7 @@ public class UsersController : ControllerBase
 
     // GET api/<UsersController>/5
     [HttpGet("{id}")]
-    public async ValueTask<User> Get(int id)
+    public async ValueTask<UserDTO> Get(int id)
     {
         return await _mediator.Send(new GetUserByIdQuery { Id = id });
     }

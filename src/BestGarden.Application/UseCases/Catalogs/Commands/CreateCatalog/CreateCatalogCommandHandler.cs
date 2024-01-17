@@ -14,7 +14,7 @@ public class CreateCatalogCommandHandler : ICommandHandler<CreateCatalogCommand,
     {
         try
         {
-            var catalog = _mapper.Map<Catalog>(request.CatalogCreateDto); 
+            var catalog = _mapper.Map<Catalog>(request.CatalogCreateDto);
             await _catalogRepository.AddAsync(catalog, cancellationToken);
             return catalog;
         }

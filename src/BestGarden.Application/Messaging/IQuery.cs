@@ -1,6 +1,4 @@
-﻿using MediatR;
-
-namespace BestGarden.Application.Messaging;
+﻿namespace BestGarden.Application.Messaging;
 
 public interface IQuery<TResponse> : IRequest<TResponse>
 {

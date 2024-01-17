@@ -17,7 +17,7 @@ internal class OrderItemEntityConfiguration : IEntityTypeConfiguration<OrderItem
             .IsRequired();
 
         builder.Property(x => x.Price)
-            .HasPrecision(10,2)
+            .HasPrecision(10, 2)
             .IsRequired();
 
         builder.Property(x => x.OrderId)

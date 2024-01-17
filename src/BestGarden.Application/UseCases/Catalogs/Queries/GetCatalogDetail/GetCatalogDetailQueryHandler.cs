@@ -26,7 +26,7 @@ public class GetCatalogDetailQueryHandler : IQueryHandler<GetCatalogDetailQuery,
                 Name = product.Name,
                 Price = product.Price,
                 ImagePath = product.ImagePath
-                
+
             })
         };
         return catalogDetail;

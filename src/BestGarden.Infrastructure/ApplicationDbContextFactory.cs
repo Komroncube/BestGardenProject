@@ -12,7 +12,7 @@ internal class ApplicationDbContextFactory : IDesignTimeDbContextFactory<Applica
             .AddJsonFile("appsettings.json")
             .Build();
         var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
-        
+
         var connectionString = configuration.GetConnectionString("DefaultConnection");
 
         builder.UseSqlServer(connectionString);

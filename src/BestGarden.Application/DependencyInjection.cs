@@ -1,7 +1,6 @@
-﻿using System.Reflection;
-using BestGarden.Application.Services;
-using MediatR;
+﻿using BestGarden.Application.Services;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace BestGarden.Application;
 
@@ -14,5 +13,5 @@ public static class DependencyInjection
         services.AddTransient<IFileService, FileService>();
         return services;
     }
-    
+
 }

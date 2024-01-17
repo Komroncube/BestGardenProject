@@ -2,14 +2,11 @@
 using BestGarden.Application.UseCases.Catalogs.Commands.CreateCatalog;
 using BestGarden.Application.UseCases.Catalogs.Queries.GetCatalogDetail;
 using BestGarden.Application.UseCases.Catalogs.Queries.GetCatalogList;
-using BestGarden.Domain.Models;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace BestGarden.API.Controllers;
-[Route("api/[controller]/[action]")]
+[Route("api/[controller]")]
 [ApiController]
 public class CatalogsController : ControllerBase
 {

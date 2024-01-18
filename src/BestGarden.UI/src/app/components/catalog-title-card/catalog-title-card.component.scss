@@ -1,0 +1,27 @@
+.katalog-card {
+    width: 370px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #DAE8F1;
+}
+
+.katalog-card-title {
+    padding-top: 10px;
+}
+
+.katalog-card-title h4 {
+    padding-bottom: 10px;
+    color: #58819fc9;
+}
+
+.katalog-card-title p {
+    color: #9FBACB;
+}
+
+
+.katalog-card-landscape-img img {
+    border-radius: 50%;
+    width: 80px;
+}

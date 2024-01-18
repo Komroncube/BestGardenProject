@@ -1,62 +1,123 @@
-$green: #245e62;
-$green-hover: #3a6e72;
-
-* {
-    color: $green;
+header {
+    z-index: 33;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow:2px 0px 5px 2px rgba(0, 0, 0, 0.134);
 }
 
-.logo-text {
+.main-logo img {
+    width: 200px;
+}
+
+.header-top {
+    padding-top: 30px;
+    padding-bottom: 20px;
     display: flex;
-    flex-direction: column;
+    list-style-type: none;
     align-items: center;
-    img {
-        width: 75px;
-        height: 35px;
-    }
-    p {
-        text-align: center;
-        font-size: 0.5em;
-    }
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.095);
 }
-.top-header {
+
+.birinchi-li {
+    display: flex;
+}
+
+.search-input input {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding-left: 15px;
+    width: 300px;
+    height: 41px;
+    outline: none;
+    color: #245E62;
+    border: 1px solid #245E62;
+}
+
+.search-icon {
+    background-color: #245E62;
+    padding: 14px;
+    margin-left: -10px;
+    color: white;
+    font-size: 14px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    cursor: pointer;
+}
+
+.ikkinchi-li {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
-.input-group {
-    border-color: $green;
-    height: 40px;
-    margin-right: 20px;
+
+.ikkinchi-li p {
+    color: #245E62;
+    cursor: pointer;
 }
-.input-group button {
-    background-color: $green;
+
+.uchinchi-li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.uchinchi-li p {
+    margin-top: 10px;
+    color: #245E62;
+}
+
+.bx-phone {
+    font-size: 34px;
+}
+
+.bx-user-circle {
+    font-size: 34px;
+}
+
+.header-bottom {
+    list-style-type: none;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bx-cart-add {
+    margin-left: 200px;
+}
+
+.bx-question-mark {
+    background-color: #235E62;
+    border-radius: 50%;
     
-}
-.input-group button:hover {
-    background-color: $green-hover;
-}
-.connection {
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-}
-.connection p {
-    font-size: 0.5em;
-}
-.register {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.phone-call {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    gap: 5px;
-}
-.number-day p {
-    margin:0;
+    color: #fff;
+    margin-right: 5px;
+    padding: 2px;
 }
 
-i {
-    color: $green;
+.question-mark button {
+    cursor: pointer;
+    background-color: #B4DFE2;
+    color: #1b4e51;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.question-mark button:hover {
+    background-color: #b4dfe2d2;
+}
+
+.header-bottom li a {
+    color: #235E62;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-bottom li a:hover {
+    color: #235e62da;
 }

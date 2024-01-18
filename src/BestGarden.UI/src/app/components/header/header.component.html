@@ -1,45 +1,45 @@
-<div class="box">
+<header>
     <div class="container">
-        <div class="top-header m-1">
-            <div class="logo-text p-3">
-                <img src="../../../assets/logo.png" alt="logo">
-                <p>Оптовая продажа товаров для сада</p>
-            </div>
-            <div class="input-group mr-4 mb-3 rounded-4">
-                <input type="text" class="form-control" placeholder="Recipient's username"
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                    </svg>
-                </button>
-            </div>
-            <div class="connection">
-
-                <div class="register">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512"><path fill="#b7e0e2" d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+        <nav>
+            <ul class="header-top">
+                <li><a href="#" class="main-logo"><img src="../../../assets/logo.png" alt="logo"></a></li>
+                <li class="birinchi-li">
+                    <div class="search-input">
+                        <input type="text" placeholder="Название или артикул">
+                        <i class='bx bx-search search-icon'></i>
                     </div>
+
+                </li>
+
+                <li class="ikkinchi-li">
+                    <i class='bx bx-user-circle'></i>
                     <p>Вход | Регистрация</p>
-                </div>
-                <div class="phone-call">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px"><g fill="#b7e0e2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M14,3.99023c-5.51133,0 -10,4.48867 -10,10v22c0,5.51133 4.48867,10 10,10h22c5.51133,0 10,-4.48867 10,-10v-22c0,-5.51133 -4.48867,-10 -10,-10zM18.00586,12.0332c0.628,0.027 1.20473,0.38083 1.55273,0.92383c0.396,0.618 1.01055,1.57712 1.81055,2.82813c0.73,1.141 0.78091,2.61469 0.12891,3.80469l-1.46484,2.08398c-0.396,0.564 -0.47498,1.28588 -0.20898,1.92188c0.414,0.99 1.21658,2.5115 2.64258,3.9375c1.426,1.426 2.9475,2.22858 3.9375,2.64258c0.636,0.266 1.35788,0.18702 1.92188,-0.20898l2.08398,-1.46484c1.19,-0.652 2.66369,-0.60009 3.80469,0.12891c1.251,0.8 2.21012,1.41455 2.82813,1.81055c0.543,0.348 0.89683,0.92473 0.92383,1.55273c0.154,3.564 -2.60716,5.00781 -3.41016,5.00781c-0.556,0 -7.2403,0.7597 -14.7793,-6.7793c-7.539,-7.539 -6.7793,-14.2233 -6.7793,-14.7793c0,-0.803 1.44381,-3.56416 5.00781,-3.41016z"></path></g></g></svg>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512" ><path fill="#b7e0e2" d="m27.9999 51.9062c13.0547 0 23.9064-10.8515 23.9064-23.9062 0-13.0781-10.8751-23.9062-23.9298-23.9062-13.0782 0-23.8828 10.8281-23.8828 23.9062 0 13.0547 10.8281 23.9062 23.9062 23.9062zm-6.1172-18.0702c-5.8125-5.7891-9.5156-13.172-5.1328-17.5547.2578-.2579.5391-.5157.7969-.7735 1.3359-1.2656 2.625-1.1953 3.7734.4219l3.0469 4.3359c1.0312 1.5.7734 2.3438-.3281 3.5157l-.961 1.0547c-.3515.328-.2109.7734-.0468 1.0546.4453.8438 1.7109 2.3438 3.0702 3.7032 1.4063 1.4062 2.836 2.6015 3.7266 3.0937.3282.1875.7969.2344 1.1016-.0469l1.0078-.9609c1.125-1.1016 2.0391-1.3828 3.4922-.3516 2.0156 1.4297 3.2344 2.2735 4.4297 3.0938 1.4765 1.0781 1.8281 2.4141.3281 3.7734-.2578.2578-.4922.5391-.75.7969-4.3828 4.3594-11.7422.6562-17.5547-5.1562z"/></svg> -->
-                    </div>
-                    <div class="number-day">
-                        <p class="number">
-                            <b>+7 (495) 734-80-88 </b>
-                        </p>
-                        <p class="day">
-                            Пн-Пт 9:00-18:00
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </li>
 
+                <li class="uchinchi-li">
+                    <div>
+                        <i class='bx bx-phone'></i>
+                    </div>
+
+                    <div>
+                        <h4>+7(495) 734-80-88</h4>
+                        <p>Пн-Пт 09:00-18:00</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="header-bottom">
+                <li><a href="./Pages/Ikkinchi-page/katalog/index.html">Каталоги</a></li>
+                <li><a href="./Pages/Beshinchi-page/o-nas/index.html">О нас</a></li>
+                <li><a href="./Pages/Beshinchi-page/dostavka-i-oplata/index.html">Доставка и оплата</a></li>
+                <li><a href="./Pages/Birinchi-page/yest-vopros/index.html" target="_blank">Задать вопрос</a></li>
+                <li><a href="./Pages/Tortinchi-page/skidki-bonus/index.html">Скидки</a></li>
+                <li><a href="./Pages/Tortinchi-page/novosti/index.html">Новости</a></li>
+                <li><a href="./Pages/Beshinchi-page/kontakt/index.html">Контакты</a></li>
+                <li><a href="./Pages/Extra-task/korzinka/index.html"><i class='bx bx-cart-add'></i></a></li>
+                <li class="question-mark"><a target="_blank" href="./Pages/Birinchi-page/status-zakaz-1/index.html"><button><i class='bx bx-question-mark'></i>Узнать статус
+                            заказа</button></a></li>
+            </ul>
+        </nav>
     </div>
-</div>
+</header>

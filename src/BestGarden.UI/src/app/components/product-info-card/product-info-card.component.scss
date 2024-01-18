@@ -1,0 +1,30 @@
+.card-landscape {
+    border-radius: 7px;
+    width: 250px;
+}
+
+.card {
+    border-radius: 7px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.095);
+}
+
+.card-1-title {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.card-1-title p {
+    font-size: 15px;
+    width: 150px;
+    color: #235E62;
+}
+
+.card-1-title p a{
+    text-decoration: none;
+    color: #235E62;
+}
+
+.bx-info-circle {
+    font-size: 20px;
+}

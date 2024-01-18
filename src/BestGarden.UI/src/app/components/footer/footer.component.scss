@@ -1,0 +1,159 @@
+
+footer {
+    padding-top: 50px;
+    z-index: 1;
+    background-color: #ECF3F9;
+}
+
+footer .main-logo img {
+    width: 200px;
+}
+
+.footer-wrapper-2 {
+    padding: 30px;
+    background-color: #1F565B;
+    margin: 0 auto;
+}
+
+.footer-wrapper-2 p {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    /* margin-left: 320px; */
+}
+
+.footer-wrapper-2 p small {
+    font-size: 16px;
+    color: #ffffff76;
+}
+
+.footer-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.birinchi-ul {
+    width: 290px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.birinchi-ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.ikkinchi-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ikkinchi-ul li {
+    font-weight: bold;
+}
+
+.ikkinchi-ul li a {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+
+.uchinchi-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.uchinchi-ul li {
+    font-weight: bold;
+}
+
+.uchinchi-ul li a {
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.tortinchi-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tortinchi-ul li {
+    font-weight: bold;
+}
+
+.tortinchi-ul li a {
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+.forma-obratnoy a {
+    color: #D9B15A;
+}
+
+.beshinchi-ul {
+    position: relative;
+    bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bxl-telegram {
+    transition: all 0.3s ease;
+    color: #000;
+    font-size: 34px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bxl-telegram:hover {
+    background-color: #ecf3f900;
+}
+
+.bxl-facebook:hover {
+    background-color: #ecf3f900;
+}
+
+.bxl-instagram-alt:hover {
+    background-color: #ecf3f900;
+}
+
+.bxl-facebook {
+    transition: all 0.3s ease;
+    color: #000;
+    font-size: 34px;
+    background-color: #ECF3F9;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bxl-instagram-alt {
+    transition: all 0.3s ease;
+    color: #000;
+    font-size: 34px;
+    background-color: #ECF3F9;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}

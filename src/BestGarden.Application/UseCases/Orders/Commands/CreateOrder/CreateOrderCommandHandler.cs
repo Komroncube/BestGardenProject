@@ -25,7 +25,7 @@ public class CreateOrderCommandHandler : ICommandHandler<CreateOrderCommand, Ord
         try
         {
             User user = await _userRepository.GetAsync(2, cancellationToken);
-            if (!user.Orders.Any())
+            if (!user.BasketItems.Any())
                 throw new Exception("User has an active order");
 
             var getBasketItemsQuery = new GetBasketDetailQuery();

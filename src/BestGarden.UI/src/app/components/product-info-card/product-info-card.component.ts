@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ICardTitle } from '../../Interfaces/ICatalogTitle';
+import { ProductInfo } from '../../Interfaces/Products/ProductInfo';
 
 @Component({
   selector: 'app-product-info-card',
@@ -10,5 +10,5 @@ import { ICardTitle } from '../../Interfaces/ICatalogTitle';
 })
 export class ProductInfoCardComponent {
   @Input()
-  data! : ICardTitle;
+  data! : ProductInfo;
 }

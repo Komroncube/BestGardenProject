@@ -1,0 +1,46 @@
+.section-5_second-div {
+    border-radius: 20px;
+    padding: 40px;
+    width: 1200px;
+    background-color: #b5e1e483;
+}
+
+.section-5_second-div h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    color: #235E62;
+    padding-bottom: 30px;
+}
+.faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #1b4e51;
+}
+
+:host {
+    ::ng-deep .faq {
+        text-decoration: none;
+        font-weight: bold;
+        padding: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        color: #1b4e51;
+    }
+    ::ng-deep .faq-body {
+        padding:20px;
+    }
+    ::ng-deep .faq-2 {
+        font-weight: bold;
+        padding: 20px;
+        color: #1b4e51;
+        text-decoration: none;
+
+    }
+
+}
+
+

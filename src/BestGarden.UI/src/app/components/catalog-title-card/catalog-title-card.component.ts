@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ICardTitle } from '../../Interfaces/ICatalogTitle';
+import { ICatalogTitle } from '../../Interfaces/Catalogs/ICatalogTitle';
 
 
 @Component({
@@ -11,5 +11,5 @@ import { ICardTitle } from '../../Interfaces/ICatalogTitle';
 })
 export class CatalogTitleComponent {
   @Input()
-  data! : ICardTitle;
+  data! : ICatalogTitle;
 }

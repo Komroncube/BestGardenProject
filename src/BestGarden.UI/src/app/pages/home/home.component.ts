@@ -5,6 +5,7 @@ import { ProductsService } from '../../services/products.service';
 import { IProduct } from '../../Interfaces/Products/IProduct';
 import { ProductInfoCardComponent } from "../../components/product-info-card/product-info-card.component";
 import { ProductInfo } from '../../Interfaces/Products/ProductInfo';
+import { CatalogsService } from '../../services/catalogs.service';
 
 @Component({
   selector: 'app-home',
@@ -19,20 +20,17 @@ export class HomeComponent {
    * 
    */
   products!: ProductInfo[];
-  
-  // pr : IProduct = {
-  //   Id: 1,
-  //   Name: "test",
-  //   Description: "test",
-  //   ImagePath: "test",
-  //   CatalogId: 1,
-  // }
+  catalogs!: IProduct[];
+
 
   /**
    * 
    * @param productService 
    */
-  constructor(private productService: ProductsService) {
+  constructor(
+    private productService: ProductsService,
+    private catalogService: CatalogsService
+    ) {
     this.getProducts();
   }
 
@@ -47,7 +45,15 @@ export class HomeComponent {
         product.imagePath || '' // Default to empty string if ImagePath is missing
     )).slice(0, 4)
       
-      console.log(this.products);
+      // console.log(this.products);
+    },
+    (error: any) => console.log(error));
+  }
+
+  private getCatalogs() {
+    this.productService.getCatalogs().subscribe((catalogs) => {
+      this.catalogs = catalogs;
+      console.log(this.catalogs);
     },
     (error: any) => console.log(error));
   }

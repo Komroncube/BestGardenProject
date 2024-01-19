@@ -12,22 +12,15 @@
     color: #235E62;
     padding-bottom: 30px;
 }
-.faq {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    padding: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: #1b4e51;
-}
+
 
 :host {
     ::ng-deep .faq {
+        background-color: #8fc6c983;
         text-decoration: none;
         font-weight: bold;
         padding: 20px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         color: #1b4e51;
     }
     ::ng-deep .faq-body {

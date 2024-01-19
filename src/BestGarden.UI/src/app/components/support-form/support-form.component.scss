@@ -1,0 +1,131 @@
+.container {
+    position: absolute;
+}
+.section-6__wrapper h3 {
+    padding-top: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 27px;
+    color: #235E62;
+    padding-bottom: 20px;
+}
+
+.section-6__wrapper p {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.registration {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.registr-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.name-input {
+    border: none;
+    background-color: #ECF3F9;
+    color: rgba(0, 0, 0, 0.387);
+    border-radius: 10px;
+    width: 440px;
+    padding: 20px;
+}
+
+.name-input input {
+    background-color: #ECF3F9;
+    outline: none;
+    border: none;
+    width: 400px;
+    height: 30px;
+
+}
+
+.email-input input {
+    background-color: #ECF3F9;
+    outline: none;
+    border: none;
+    width: 400px;
+    height: 30px;
+}
+
+.email-input {
+    background-color: #ECF3F9;
+    color: rgba(0, 0, 0, 0.387);
+    border-radius: 10px;
+    width: 440px;
+    padding: 20px;
+}
+
+.email-input p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.387);
+}
+
+.name-input p {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.387);
+}
+
+.text-area-input textarea {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ECF3F9;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.submit {
+    gap: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prikrepit {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.prikrepit {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #235E62;
+}
+
+.bxs-file {
+    font-size: 20px;
+}
+
+.check {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.otravit-btn {
+    cursor: pointer;
+    background-color: #245E62;
+    margin-top: 20px;
+    margin-left: 400px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 200px;
+
+}
+
+.otravit-btn:hover {
+    background-color: #245e62e6;
+}
+
+/* SECTION-6 ENDED */

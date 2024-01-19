@@ -16,7 +16,9 @@ public class GetCatalogListQueryHandler : IQueryHandler<GetCatalogListQuery, IEn
         var catalogList = catalogs.Select(catalog => new CatalogListDTO
         {
             Id = catalog.Id,
-            ProductQuantity = catalog.Products.Count
+            Name = catalog.Name,
+            ProductQuantity = catalog.Products.Count,
+            ImagePath = catalog.ImagePath,
         });
         return catalogList;
     }

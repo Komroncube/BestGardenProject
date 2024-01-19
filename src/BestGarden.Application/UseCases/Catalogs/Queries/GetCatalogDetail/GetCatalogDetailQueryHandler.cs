@@ -20,6 +20,7 @@ public class GetCatalogDetailQueryHandler : IQueryHandler<GetCatalogDetailQuery,
             Name = catalog.Name,
             Description = catalog.Description,
             PlantSystem = catalog.PlantSystem,
+            ImagePath = catalog.ImagePath,
             Products = catalog.Products.Select(product => new ProductListDTO
             {
                 Id = product.Id,

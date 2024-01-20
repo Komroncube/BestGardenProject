@@ -1,10 +1,10 @@
-<div class="katalog-card">
+<div class="katalog-card" [routerLink]="['/catalog/'+data.id]" routerLinkActive="router-link-active" >
     <div class="katalog-card-landscape-img">
-        <img [src]="data.imagePath" alt="landscape">
+        <img [src]="data.imagePath | imageUrl" alt="landscape">
     </div>
 
     <div class="katalog-card-title">
-        <h4> {{ data.title }}</h4>
-        <p> {{ data.quantity}} </p>
+        <h4> {{ data.name }}</h4>
+        <p> {{ data.quantity }} </p>
     </div>
 </div>

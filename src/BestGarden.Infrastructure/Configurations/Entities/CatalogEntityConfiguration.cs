@@ -20,7 +20,7 @@ internal class CatalogEntityConfiguration : IEntityTypeConfiguration<Catalog>
             .IsRequired();
 
         builder.Property(x => x.PlantSystem)
-            .HasMaxLength(100)
+            .HasMaxLength(200)
             .IsRequired();
         builder.Property(x => x.ImagePath)
             .HasMaxLength(100)

@@ -14,7 +14,7 @@ internal class OrderEntityConfiguration : IEntityTypeConfiguration<Order>
             .IsRequired();
 
         builder.Property(x => x.OrderDate)
-            .HasDefaultValue(DateTime.Now)
+            .HasDefaultValue(DateTime.UtcNow)
             .IsRequired();
 
         builder.Property(x => x.DeliveryType)

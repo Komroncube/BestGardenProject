@@ -1,0 +1,36 @@
+.katalog-card-landscape{
+    width: 250px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.katalog-card-title{
+    width: 250px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    background-color: #DAE8F1;
+}
+
+.katalog-card-title h4{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color:#1F565B;
+}
+
+.katalog-card-title h4 a{
+    text-decoration: none;
+    color: #1F565B;
+}
+
+.katalog-card-title p{
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    color: #1f565b6e;
+}

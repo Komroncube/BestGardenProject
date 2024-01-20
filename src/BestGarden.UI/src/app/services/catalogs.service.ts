@@ -10,10 +10,10 @@ import { HttpClient } from '@angular/common/http';
 export class CatalogsService implements ICatalogService {
 
   constructor(private http:HttpClient) { }
-  getProducts(): Observable<ICatalogTitle[]> {
+  getCatalogs(): Observable<ICatalogTitle[]> {
     return this.http.get<ICatalogTitle[]>('api/catalogs');
   }
-  getProductById(id: number): Observable<ICatalogTitle> {
+  getCatalogById(id: number): Observable<ICatalogTitle> {
     throw new Error('Method not implemented.');
   }
 }

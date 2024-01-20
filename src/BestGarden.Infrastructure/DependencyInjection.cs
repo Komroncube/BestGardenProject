@@ -20,9 +20,9 @@ public static class DependencyInjection
                       $"Initial Catalog={DB_NAME};" +
                       $"User ID=SA;Password={DB_PASSWORD};" +
                       $"TrustServerCertificate=True;";
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            var connectionString = configuration.GetConnectionString("PostgresqlConnection");
             options.UseLazyLoadingProxies()
-                    .UseSqlServer(connectionString);
+                    .UseNpgsql(connectionString);
         });
 
         //services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));

@@ -2,6 +2,6 @@ import { Observable } from "rxjs";
 import { ICatalogTitle } from "./Catalogs/ICatalogTitle";
 
 export interface ICatalogService {
-  getProducts(): Observable<Array<ICatalogTitle>>;
-  getProductById(id: number): Observable<ICatalogTitle>;
+  getCatalogs(): Observable<Array<ICatalogTitle>>;
+  getCatalogById(id: number): Observable<ICatalogTitle>;
 }

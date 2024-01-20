@@ -13,9 +13,9 @@ internal class ApplicationDbContextFactory : IDesignTimeDbContextFactory<Applica
             .Build();
         var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
-        var connectionString = configuration.GetConnectionString("DefaultConnection");
+        var connectionString = configuration.GetConnectionString("PostgresqlConnection");
 
-        builder.UseSqlServer(connectionString);
+        builder.UseNpgsql(connectionString);
 
         return new ApplicationDbContext(builder.Options);
     }

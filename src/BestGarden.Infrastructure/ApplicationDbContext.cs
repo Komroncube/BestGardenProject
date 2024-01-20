@@ -17,11 +17,11 @@ public class ApplicationDbContext : DbContext
     {
         foreach (var entry in ChangeTracker.Entries<BaseDomainEntity>())
         {
-            entry.Entity.UpdatedAt = DateTime.Now;
+            entry.Entity.UpdatedAt = DateTime.UtcNow;
 
             if (entry.State == EntityState.Added)
             {
-                entry.Entity.CreatedAt = DateTime.Now;
+                entry.Entity.CreatedAt = DateTime.UtcNow;
             }
         }
         return base.SaveChangesAsync(cancellationToken);

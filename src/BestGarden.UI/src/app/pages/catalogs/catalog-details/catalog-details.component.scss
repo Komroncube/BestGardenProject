@@ -1,0 +1,277 @@
+
+#section-1 {
+    background-color: #F6F9FF;
+}
+
+.section-1__wrapper{
+    padding-bottom: 100px;
+    max-width: 1100px;
+}
+
+.katalog-title {
+    color: rgba(0, 0, 0, 0.291);
+    text-decoration: none;
+}
+
+.intro-info {
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.intro-info p a:nth-child(1) {
+    color: #1F565B;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.anchor{
+    color: #1F565B;
+        text-decoration: none;
+        font-weight: 500;
+}
+
+.section-1-flexbox{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.landscape-big{
+    border-radius: 15px;
+    width: 610px;
+}
+
+.landscape-mini{
+    border-radius: 15px;
+    width: 150px;
+}
+
+.landscape-round{
+    width: 50px;
+    border-radius:50%;
+}
+
+.small-img{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.bx-circle {
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 8px;
+    color: #235E62;
+    background-color: #235E62;
+    border-radius: 50%;
+}
+
+.section-1-flexbox-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pereyti{
+    display: flex;
+    gap: 20px;
+}
+.flexbox-2-card{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.flexbox-2-card_wrapper{
+    padding-top: 20px;
+}
+
+.flexbox-2-card p{
+    color:rgba(0, 0, 0, 0.864);
+}
+
+.flexbox-2-card p b{
+    color:#235E62;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.download{
+    cursor: pointer;
+    background-color: #245E62;
+    border:none;
+    border-radius: 10px;
+    width: 225px;
+    height: 50px;
+    color:#fff;
+}
+
+.download:hover{
+    background-color: #245e62dc;
+}
+
+.oformit{
+    cursor:pointer;
+    color:#235E62;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 225px;
+    font-weight: bold;
+    height: 50px;
+    border:1px solid #1F565B;
+    transition: all 0.3s ease;
+}
+
+.oformit:hover{
+    border:none;
+    background-color: #235E62;
+    color:white;
+}
+
+.section-1-flexbox-2 h3{
+    text-transform: uppercase;
+        font-size: 27px;
+        color: #235E62;
+        padding-bottom: 25px;
+        border-bottom:1px solid rgba(0, 0, 0, 0.076);
+}
+
+.pereyti{
+    display: flex;
+    gap: 10px;
+}
+
+.pereyti p{
+    width: 280px;
+    font-weight: 400;
+}
+
+.pereyti p a{
+    font-weight: 600;
+    color:#51BCC3;
+    text-decoration: none;
+}
+
+.bx-store-alt{
+    font-size: 30px;
+    padding: 8px;
+    background-color: #51BCC3;
+    border-radius:50%;
+    color:#fff;
+}
+
+.katalog-card-landscape {
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.katalog-card-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+.katalog-card-title {
+    width: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    background-color: #DAE8F1;
+}
+
+.katalog-card-title h4 {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F565B;
+}
+
+.katalog-card-title h4 a {
+    text-decoration: none;
+    color: #1F565B;
+}
+
+.katalog-card-title p {
+    display: inline;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #1f565b6e;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bxs-cart-add{
+    cursor:pointer;
+    color:#235E62;
+    position: relative;
+    font-size: 25px;
+    left:105px;
+    top:20px;
+}
+
+.bx-cart-add {
+    cursor: pointer;
+    color: #000;
+    font-size: 36px;
+    position: relative;
+    left:10px;
+}
+
+.intro-info {
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.intro-info p a:nth-child(1) {
+    color: #1F565B;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.katalog-title {
+    color: rgba(0, 0, 0, 0.291);
+    text-decoration: none;
+}
+
+.bx-circle {
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 8px;
+    color: #235E62;
+    background-color: #235E62;
+    border-radius: 50%;
+}
+
+.katalog-info h3 {
+    color: #235E62;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 50px;
+}

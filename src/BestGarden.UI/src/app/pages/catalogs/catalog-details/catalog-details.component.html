@@ -1,0 +1,46 @@
+<main>
+    <!-- SECTION-1 STARTED -->
+    <section id="section-1">
+        <div class="container">
+            <div class="section-1__wrapper">
+                <div class="intro-info">
+                    <p><a [routerLink]="'../../../'">Главная</a> <i class='bx bx-circle'></i> <a
+                            [routerLink]="'../../catalogs'" class="anchor">Каталоги</a> <i class='bx bx-circle'></i> <a
+                            [routerLink]="['']"
+                            class="katalog-title">{{catalog?.name}}</a></p>
+                </div>
+
+                <div class="section-1-flexbox">
+                    <div class="section-1-flexbox-1">
+                        <div class="big-img">
+                            <img class="landscape-big" [src]="catalog?.imagePath | imageUrl" alt="landscape">
+                        </div>
+                    </div>
+
+                    <div class="section-1-flexbox-2">
+                        <h3>{{catalog?.name}}</h3>
+                        <div class="flexbox-2-card_wrapper">
+                            <div class="flexbox-2-card">
+                                <!-- <img class="landscape-round" src="./../../../assets/Images/landscape.png" alt="landscape"> -->
+                                <p><b>Описание:</b> {{catalog?.description}}</p>
+                            </div>
+
+                            <div class="flexbox-2-card">
+                                <!-- <img class="landscape-round" src="./../../../assets/Images/landscape.png" alt="landscape"> -->
+                                <p><b>Обшие характеристики:</b> {{catalog?.plantSystem}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="katalog-card-wrapper">
+                @for(product of catalog?.products; track product.id) {
+                    <app-product-card [product]="product"></app-product-card>
+                }
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION-1 ENDED -->
+</main>

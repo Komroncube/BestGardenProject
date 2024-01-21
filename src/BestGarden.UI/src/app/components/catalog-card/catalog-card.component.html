@@ -2,7 +2,7 @@
     <img class="katalog-card-landscape" [src]="data.imagePath | imageUrl" alt="landcape">
 
     <div class="katalog-card-title">
-        <h4><a [routerLink]="['./'+data.id]" routerLinkActive="router-link-active" >{{data.name}}</a></h4>
+        <h4><a [routerLink]="['./'+data.id]">{{data.name}}</a></h4>
         <p>{{ data.quantity }}</p>
     </div>
 </div>

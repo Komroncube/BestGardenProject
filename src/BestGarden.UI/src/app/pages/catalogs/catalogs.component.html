@@ -10,13 +10,11 @@
                 <div class="katalog-info">
                     <h3>Каталоги товаров</h3>
 
-                    <div class="katalog-card-wrapper">
-                        <p-scrollPanel [style]="{ width: '100%', height: '150px' }"> 
+                        <div class="katalog-card-wrapper">
                             @for(catalog of catalogs; track catalog.id) {
                                 <app-catalog-card [data]="catalog"></app-catalog-card>
                             }
-                        </p-scrollPanel>
-                    </div>
+                        </div>
                 </div>
 
             </div>

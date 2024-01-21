@@ -6,7 +6,10 @@ import { environment } from '../../environments/environment';
   standalone: true
 })
 export class ImageUrlPipe implements PipeTransform {
-  transform(value: string): string {
-      return `${environment.apiUrl}\\${value}`;
+  transform(value: string | undefined): string {
+    if (!value) {
+      return 'https://placehold.co/600x400';
+    }
+    return `${environment.apiUrl}\\${value}`;
   }
 }

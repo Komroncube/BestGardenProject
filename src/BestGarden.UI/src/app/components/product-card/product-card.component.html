@@ -1,0 +1,10 @@
+<div class="katalog-card">
+    <img class="katalog-card-landscape" [src]="product.imagePath | imageUrl" alt="landcape">
+
+    <div class="katalog-card-title">
+        <h4>{{ product.name}}</h4>
+        <p>{{ product.price}}</p>
+
+        <i class='bx bxs-cart-add' (click)="addToBasket()"></i>
+    </div>
+</div>

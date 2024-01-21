@@ -1,0 +1,58 @@
+.katalog-card-title {
+    width: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    background-color: #DAE8F1;
+}
+
+.katalog-card-title h4 {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F565B;
+}
+
+.katalog-card-title h4 a {
+    text-decoration: none;
+    color: #1F565B;
+}
+
+.katalog-card-title p {
+    display: inline;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #1f565b6e;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bxs-cart-add{
+    cursor:pointer;
+    color:#235E62;
+    position: relative;
+    font-size: 25px;
+    left:105px;
+    top:20px;
+}
+
+.bx-cart-add {
+    cursor: pointer;
+    color: #000;
+    font-size: 36px;
+    position: relative;
+    left:10px;
+}
+.katalog-card-landscape {
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

@@ -27,6 +27,7 @@ public class UsersController : ControllerBase
             
             var resp = new AuthenticationResponse()
             {
+                Id = user.Id,
                 Email = authenticationRequest.Email,
                 Token = _jwtService.GenerateToken(user)
             };

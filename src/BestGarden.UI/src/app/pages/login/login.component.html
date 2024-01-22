@@ -1,0 +1,18 @@
+<form class="register-form" [formGroup]="loginForm">
+
+    <div class="number-input">
+        <p>Введите элекронную почту</p>
+        <input type="text" required formControlName="email">
+    </div>
+
+    <div class="number-input">
+        <p>Введите пароль</p>
+        <input type="password" required formControlName="password">
+    </div>
+
+    <a href="#">
+        <button type="submit" (click)="submit()" [disabled]="!loginForm.valid">
+            Войти в личный кабинет
+        </button>
+    </a>
+</form>

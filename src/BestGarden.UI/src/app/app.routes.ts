@@ -11,6 +11,6 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/main-template/main-template.routes')
         .then(m => m.MAIN_TEMPLATE_ROUTES)
     },
-    { path: '', component: PlaygroundComponent},
+    { path: 'test', component: PlaygroundComponent},
     { path: '**', redirectTo: 'home' }
 ];

@@ -1,5 +1,4 @@
-﻿using BestGarden.Application.DTOs.Users;
-using BestGarden.Application.UseCases.Baskets.Queries.GetBasketDetail;
+﻿using BestGarden.Application.UseCases.Baskets.Queries.GetBasketDetail;
 namespace BestGarden.Application.UseCases.Orders.Commands.CreateOrder;
 public class CreateOrderCommandHandler : ICommandHandler<CreateOrderCommand, Order>
 {

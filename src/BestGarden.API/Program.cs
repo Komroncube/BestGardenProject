@@ -27,7 +27,7 @@ app.UseCors(options =>
     options.AllowAnyOrigin();
     options.AllowAnyHeader();
 });
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthorization();
 

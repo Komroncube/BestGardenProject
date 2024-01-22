@@ -1,0 +1,31 @@
+.button-flex{
+    justify-content: center;
+    padding: 2px;
+    width: 120px;
+    border:1px solid rgba(0, 0, 0, 0.419);
+    border-radius:10px;
+    background-color: #EFEFEF;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+.button-flex p {
+    padding-top: 10px;
+}
+.plyus{
+    cursor: pointer;
+    font-size: 18px;
+    border:none;
+    margin-left: 2px;
+    padding: 10px;
+    width: 60px;
+}
+
+.minus{
+    cursor: pointer;
+        font-size: 18px;
+        border: none;
+        margin-left: 2px;
+        padding: 10px;
+        width: 60px;
+}

@@ -1,7 +1,9 @@
-﻿using BestGarden.Application.DTOs.Users;
+﻿using System.Text.Json;
+using BestGarden.Application.DTOs.Users;
 using BestGarden.Application.UseCases.Users.Commands.CreateUser;
 using BestGarden.Application.UseCases.Users.Commands.DeleteUser;
 using BestGarden.Application.UseCases.Users.Commands.UpdateUser;
+using BestGarden.Application.UseCases.Users.Queries.GetUserByEmail;
 using BestGarden.Application.UseCases.Users.Queries.GetUserDetail;
 using BestGarden.Application.UseCases.Users.Queries.GetUserList;
 
@@ -36,7 +38,7 @@ public class UsersController : ControllerBase
 
     // POST api/<UsersController>
     [HttpPost]
-    public async ValueTask<User> Post([FromForm] UserDTO userDto)
+    public async ValueTask<User> Post(UserDTO userDto)
     {
         return await _mediator.Send(new CreateUserCommand { UserDto = userDto });
     }
@@ -54,5 +56,11 @@ public class UsersController : ControllerBase
     public async ValueTask<bool> Delete(int id)
     {
         return await _mediator.Send(new DeleteUserCommand { Id = id });
+    }
+
+    [HttpPost("authentication")]
+    public async ValueTask<UserDTO> GetByEmail(AuthenticationRequest authenticationRequest)
+    {
+        return await _mediator.Send(new GetUserByEmailQuery { Authentication = authenticationRequest });
     }
 }

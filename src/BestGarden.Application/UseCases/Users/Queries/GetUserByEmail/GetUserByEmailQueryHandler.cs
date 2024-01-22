@@ -1,15 +1,20 @@
-﻿namespace BestGarden.Application.UseCases.Users.Queries.GetUserByEmail;
-public class GetUserByEmailQueryHandler : IQueryHandler<GetUserByEmailQuery, User>
+﻿using BestGarden.Application.DTOs.Users;
+
+namespace BestGarden.Application.UseCases.Users.Queries.GetUserByEmail;
+public class GetUserByEmailQueryHandler : IQueryHandler<GetUserByEmailQuery, UserDTO>
 {
     private readonly IUserRepository _userRepository;
+    private readonly IMapper _mapper;
 
-    public GetUserByEmailQueryHandler(IUserRepository userRepository)
+    public GetUserByEmailQueryHandler(IUserRepository userRepository, IMapper mapper)
     {
         _userRepository = userRepository;
+        _mapper = mapper;
     }
 
-    public Task<User> Handle(GetUserByEmailQuery request, CancellationToken cancellationToken)
+    public async Task<UserDTO> Handle(GetUserByEmailQuery request, CancellationToken cancellationToken)
     {
-        return _userRepository.GetUserByEmailAsync(request.Email, cancellationToken);
+        User user = await _userRepository.AuthenticateAsync(request.Authentication, cancellationToken);
+        return _mapper.Map<UserDTO>(user);
     }
 }

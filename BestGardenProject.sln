@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestGarden.API", "src\BestGarden.API\BestGarden.API.csproj", "{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestGarden.Application", "src\BestGarden.Application\BestGarden.Application.csproj", "{244B6A54-A831-4811-B7A3-6B0D979A83FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestGarden.Application", "src\BestGarden.Application\BestGarden.Application.csproj", "{244B6A54-A831-4811-B7A3-6B0D979A83FB}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BestGarden.UI", "src\BestGarden.UI\", "{6638CA13-7F2B-405E-9A40-94056B53173C}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -39,6 +39,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BestGarden.UI", "src\BestGa
 		VWDPort = "65295"
 		SlnRelativePath = "src\BestGarden.UI\"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "AuthService\AuthService.csproj", "{5A9FB579-056E-4DE6-A8D8-3B37BE6D19B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +68,10 @@ Global
 		{6638CA13-7F2B-405E-9A40-94056B53173C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6638CA13-7F2B-405E-9A40-94056B53173C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{6638CA13-7F2B-405E-9A40-94056B53173C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{5A9FB579-056E-4DE6-A8D8-3B37BE6D19B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9FB579-056E-4DE6-A8D8-3B37BE6D19B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9FB579-056E-4DE6-A8D8-3B37BE6D19B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9FB579-056E-4DE6-A8D8-3B37BE6D19B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{ED2FC4DC-D8EE-4A74-A7F2-2C6056F57195} = {AADB52CA-1524-4C71-BB8D-DBF3E77AF570}
 		{244B6A54-A831-4811-B7A3-6B0D979A83FB} = {BBAEC241-E25C-4D28-9020-CB4D64609727}
 		{6638CA13-7F2B-405E-9A40-94056B53173C} = {AADB52CA-1524-4C71-BB8D-DBF3E77AF570}
+		{5A9FB579-056E-4DE6-A8D8-3B37BE6D19B9} = {4F53A03A-9708-4416-97BB-899C531BD4EA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F40725C-F5CB-41DE-AB1E-2247772D3AAE}

@@ -4,13 +4,14 @@ import { SupportFormComponent } from "../../components/support-form/support-form
 import { ProductCardComponent } from "../../components/product-card/product-card.component";
 import { IProduct } from '../../Interfaces/Products/IProduct';
 import { QuantityButtonComponent } from "../../components/quantity-button/quantity-button.component";
+import { LoginComponent } from "../login/login.component";
 
 @Component({
     selector: 'app-playground',
     standalone: true,
     templateUrl: './playground.component.html',
     styleUrl: './playground.component.scss',
-    imports: [FaqComponent, SupportFormComponent, ProductCardComponent, QuantityButtonComponent]
+    imports: [FaqComponent, SupportFormComponent, ProductCardComponent, QuantityButtonComponent, LoginComponent]
 })
 export class PlaygroundComponent {
     data : IProduct= {

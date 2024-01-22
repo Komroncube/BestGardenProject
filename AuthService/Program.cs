@@ -15,6 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IJWTService, JWTService>();
+
 builder.Services.AddRefitClient<IBestGardenAPI>()
     .ConfigureHttpClient(x => x.BaseAddress = new Uri("http://localhost:5207"));
 
@@ -76,7 +77,12 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/V1/swagger.json", "Auth API");
 });
 app.UseHttpsRedirection();
-
+app.UseCors(options =>
+{
+    options.AllowAnyMethod();
+    options.AllowAnyOrigin();
+    options.AllowAnyHeader();
+});
 app.UseAuthorization();
 
 app.MapControllers();

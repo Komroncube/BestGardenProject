@@ -4,6 +4,8 @@ import { MainTemplateComponent } from "./main-template.component";
 import { CatalogsComponent } from "../catalogs/catalogs.component";
 import { CatalogDetailsComponent } from "../catalogs/catalog-details/catalog-details.component";
 import { NewsComponent } from "../news/news.component";
+import { AboutComponent } from "../about/about.component";
+import { ContactsComponent } from "../contacts/contacts.component";
 
 export const MAIN_TEMPLATE_ROUTES = [
     { 
@@ -23,6 +25,14 @@ export const MAIN_TEMPLATE_ROUTES = [
     {
         path: 'news',
         component: NewsComponent,
+    },
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    {
+        path: 'contacts',
+        component: ContactsComponent
     },
     {
         path: 'playground',

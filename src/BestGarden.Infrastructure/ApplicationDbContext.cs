@@ -5,7 +5,10 @@ using System.Reflection;
 namespace BestGarden.Infrastructure;
 public class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> opions) : base(opions) { }
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> opions) : base(opions)
+    {
+        Database.Migrate();
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

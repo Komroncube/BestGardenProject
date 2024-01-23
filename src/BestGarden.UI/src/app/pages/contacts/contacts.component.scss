@@ -1,0 +1,176 @@
+
+#section-1 {
+    background-color: #F6F9FF;
+    padding-bottom: 70px;
+}
+
+.intro-info {
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.intro-info p a:nth-child(1) {
+    color: #1F565B;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 23px;
+    color: #235E62;
+    padding-bottom: 40px;
+}
+
+.section-1_wrapper{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.flexbox-1{
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.095);
+
+}
+
+.flexbox-1-number{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flexbox-1 h3{
+    color:#376788;
+    font-size: 17px;
+}
+
+.flexbox-1 h4{
+    color:#50BBC3;
+    font-size: 30px;
+}
+
+.flexbox-1-rabota{
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+.shop{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.shop h5{
+    color:#51BCC3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.shop i{
+    font-size: 30px;
+    background-color: #51BCC3;
+    color:#fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.landscape-img-1{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.section-1_wrapper-2{
+    margin-bottom: 50px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.095);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-1{
+    padding: 30px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.card-2{
+    padding: 30px;
+        display: flex;
+        gap: 50px;
+        justify-content: space-between;
+}
+
+.adres-title-2 h4 {
+    color: #777878;
+    font-size: 15px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.adres-title-2 p b {
+    color: #235E64;
+    font-weight: 1000;
+}
+
+.adres-title-2 p {
+    font-weight: 300;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.najot-location{
+    width: 350px;
+    height: 100px;
+}
+
+.section-1_wrapper-2 h3{
+    color:#386A8A;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.adres-title h4{
+    color:#F47405;
+    font-size: 15px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.adres-title p b{
+    color:#235E64;
+    font-weight: 1000;
+}
+
+.adres-title p{
+    font-weight: 300;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.location-map p{
+    color:rgba(0, 0, 0, 0.346);
+    padding-bottom: 20px;
+}
+
+.location-map-2 p{
+    width: 350px;
+    color: rgba(0, 0, 0, 0.346);
+        padding-bottom: 20px;
+}

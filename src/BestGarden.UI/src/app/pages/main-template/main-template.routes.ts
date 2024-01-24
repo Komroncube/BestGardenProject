@@ -6,6 +6,7 @@ import { CatalogDetailsComponent } from "../catalogs/catalog-details/catalog-det
 import { NewsComponent } from "../news/news.component";
 import { AboutComponent } from "../about/about.component";
 import { ContactsComponent } from "../contacts/contacts.component";
+import { DeliveryAndPaymentComponent } from "../delivery-and-payment/delivery-and-payment.component";
 
 export const MAIN_TEMPLATE_ROUTES = [
     { 
@@ -33,6 +34,24 @@ export const MAIN_TEMPLATE_ROUTES = [
     {
         path: 'contacts',
         component: ContactsComponent
+    },
+    {
+        path: 'delivery-and-payment',
+        component: DeliveryAndPaymentComponent,
+        // children: [
+        //     {
+        //         path: '',
+        //         redirectTo: 'delivery',
+        //     },
+        //     {
+        //         path: 'delivery',
+        //         component: DeliveryAndPaymentComponent
+        //     },
+        //     {
+        //         path: 'payment',
+        //         component: DeliveryAndPaymentComponent
+        //     }
+        // ]
     },
     {
         path: 'playground',

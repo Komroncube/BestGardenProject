@@ -81,22 +81,9 @@
 }
 
 .submit {
-    gap: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-}
-
-.prikrepit {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.prikrepit {
-    margin-left: 20px;
-    font-size: 14px;
-    color: #235E62;
 }
 
 .bxs-file {
@@ -107,6 +94,9 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+.check p {
+    padding-top: 10px;
 }
 
 .otravit-btn {
@@ -121,7 +111,6 @@
     color: white;
     font-size: 12px;
     margin-bottom: 200px;
-
 }
 
 .otravit-btn:hover {

@@ -8,11 +8,11 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  token:string|null;
+  token:string|null|undefined;
   /**
    *
    */
   constructor() {
-    this.token = localStorage.getItem('auth_token');
+    //this.token = localStorage.getItem('auth_token');
   }
 }

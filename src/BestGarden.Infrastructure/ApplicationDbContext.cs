@@ -5,9 +5,9 @@ using System.Reflection;
 namespace BestGarden.Infrastructure;
 public class ApplicationDbContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> opions) : base(opions)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
-        Database.Migrate();
+        //Database.Migrate();
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

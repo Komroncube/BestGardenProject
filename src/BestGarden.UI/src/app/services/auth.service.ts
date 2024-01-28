@@ -8,6 +8,11 @@ import { Observable } from "rxjs/internal/Observable";
 export class AuthService {
     constructor(private http: HttpClient) { }
     authResponse? : IAuthResponse;
+    /**
+     * 
+     * @param authReq 
+     * @returns Observable<IAuthResponse|undefined>
+     */
     login(authReq: AuthRequest) : Observable<IAuthResponse|undefined> {
         return this.http.post<IAuthResponse>('api/Users/authorize', authReq)
     }

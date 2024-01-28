@@ -11,9 +11,18 @@ import { ICatalog } from '../Interfaces/Catalogs/ICatalog';
 export class CatalogsService implements ICatalogService {
 
   constructor(private http:HttpClient) { }
+  /**
+   * 
+   * @returns Observable<ICatalogTitle[]>
+   */
   getCatalogs(): Observable<ICatalogTitle[]> {
     return this.http.get<ICatalogTitle[]>('api/catalogs');
   }
+  /**
+   * 
+   * @param id 
+   * @returns Observable<ICatalog>
+   */
   getCatalogById(id: number): Observable<ICatalog> {
     return this.http.get<ICatalog>(`api/catalogs/${id}`);
   }

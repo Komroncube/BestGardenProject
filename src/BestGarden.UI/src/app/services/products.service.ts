@@ -17,9 +17,18 @@ export class ProductsService implements IProductService {
   getProducts() {
     return this.http.get<Array<IProduct>>('api/products');
   }
+  /**
+   * @param id
+   * @returns product by id
+   */
   getProductById(id: number) {
     return this.http.get<IProduct>(`api/products/${id}`);
   }
+  /**
+   * 
+   * @param product 
+   * @returns created product
+   */
   createProduct(product: IProduct) {
     return this.http.post<IProduct>('api/products', product);
   }

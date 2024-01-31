@@ -7,8 +7,15 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class ApiInterceptor implements HttpInterceptor {
+  /**
+   * 
+   * @param request 
+   * @param next 
+   * @returns 
+   */
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     // Prepend the environment-specific base URL to the request URL
+    
     const apiReq = request.clone({ url: `${environment.apiUrl}/${request.url}` });
     return next.handle(apiReq);
   }

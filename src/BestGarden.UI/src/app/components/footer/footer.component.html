@@ -10,21 +10,18 @@
             <ul class="ikkinchi-ul">
                 <li>КАТАЛОГИ</li>
                 <!-- for loopda aylanadi -->
-                <li><a href="#">Водные растения 2021</a></li>
-                <li><a href="#">Розы пакетирование 2021</a></li>
-                <li><a href="#">Луковичные и многолетники 2021</a></li>
-                <li><a href="#">Саженцы 2021</a></li>
-                <li><a href="#">Саженцы ЗКС</a></li>
-                <li><a href="#">Средства зашиты</a></li>
+                @for (item of catalogs; track item.id) {
+                    <li><a [routerLink]="['/catalog/'+item.id]" routerLinkActive="router-link-active" >{{item.name}}</a></li>
+                }
             </ul>
 
             <ul class="uchinchi-ul">
                 <li>ИНФОРМАЦИЯ</li>
-                <li><a href="#">О магазине</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
+                <li><a [routerLink]="['./about']">О магазине</a></li>
+                <li><a [routerLink]="['./delivery-and-payment']">Доставка и оплата</a></li>
                 <li><a href="#">Скидки</a></li>
                 <li><a href="#">Личный кабинет</a></li>
-                <li><a href="#">Новости</a></li>
+                <li><a [routerLink]="['./news']">Новости</a></li>
             </ul>
 
             <ul class="tortinchi-ul">
@@ -40,7 +37,7 @@
                 <li><a href="#">
                         <b>Задать вопрос:</b><br>
                         8(495) 212-85-06</a></li>
-                <li class="forma-obratnoy"><a href="#">Форма обратной связи</a></li>
+                <li class="forma-obratnoy"><a [routerLink]="['./support']" target="_blank">Форма обратной связи</a></li>
             </ul>
 
             <ul class="beshinchi-ul">

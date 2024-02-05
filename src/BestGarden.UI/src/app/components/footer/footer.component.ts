@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ICatalogTitle } from '../../Interfaces/Catalogs/ICatalogTitle';
 import { CatalogsService } from '../../services/catalogs.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

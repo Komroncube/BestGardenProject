@@ -1,6 +1,6 @@
 using BestGarden.Application;
 using BestGarden.Infrastructure;
-
+using BestGarden.SharedLibrary;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplicationLayer();
 builder.Services.AddInfrastructureLayer(builder.Configuration);
 
+builder.Services.AddCustomJwtLayer(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

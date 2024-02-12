@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BestGarden.Application\BestGarden.Application.csproj" />
     <ProjectReference Include="..\BestGarden.Infrastructure\BestGarden.Infrastructure.csproj" />
+    <ProjectReference Include="..\BestGarden.SharedLibrary\BestGarden.SharedLibrary.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -14,7 +14,14 @@ import { IAuthResponse } from '../../Interfaces/auth.interface';
 export class LoginComponent {
   constructor(private authService: AuthService,
       private route: Router) { }
-
+  /**
+   * Login form
+   */
+  loginForm: FormGroup = new FormGroup({
+    email: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
+  });
+  
   response :IAuthResponse|undefined;
   /**
    * Submit login form
@@ -26,16 +33,10 @@ export class LoginComponent {
     if (this.response) {
       this.route.navigate(['/home']);
       localStorage.setItem('auth_token', this.response.token);
+      window.alert('Login successful ' + this.response.token);
     }
     else {
       window.alert('Invalid credentials');
     }
   }
-  /**
-   * Login form
-   */
-  loginForm: FormGroup = new FormGroup({
-    email: new FormControl('', Validators.required),
-    password: new FormControl('', Validators.required),
-  });
 }

@@ -5,7 +5,7 @@ using System.Text;
 using AuthService;
 using Refit;
 using AuthService.Services;
-
+using BestGarden.SharedLibrary;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -29,7 +29,6 @@ builder.Services.AddCors(options =>
     });
 });
 builder.Services.AddCustomJwtLayer(builder.Configuration);
-
 
 
 builder.Services.AddSwaggerGen(options =>

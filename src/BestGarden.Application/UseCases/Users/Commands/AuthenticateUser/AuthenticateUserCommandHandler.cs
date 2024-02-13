@@ -1,7 +1,7 @@
 ﻿using BestGarden.Application.DTOs.Users;
 
 namespace BestGarden.Application.UseCases.Users.Commands.AuthenticateUser;
-public class AuthenticateUserCommandHandler //: ICommandHandler<AuthenticateUserCommand, AuthenticationResponse>
+public class AuthenticateUserCommandHandler : ICommandHandler<AuthenticateUserCommand, AuthenticationResponse>
 {
     private readonly IUserRepository _userRepository;
 

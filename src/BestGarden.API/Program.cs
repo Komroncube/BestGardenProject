@@ -30,6 +30,7 @@ app.UseCors(options =>
 //app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllers();
 

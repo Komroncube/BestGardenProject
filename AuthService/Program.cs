@@ -83,6 +83,7 @@ app.UseCors(options =>
     options.AllowAnyHeader();
 });
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllers();
 

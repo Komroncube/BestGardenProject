@@ -4,10 +4,12 @@ namespace BestGarden.Application.UseCases.Users.Queries.GetUserDetail;
 public class GetUserByIdQueryHandler : IQueryHandler<GetUserByIdQuery, UserDTO>
 {
     private readonly IUserRepository _userRepository;
+    private readonly IMapper _mapper;
 
-    public GetUserByIdQueryHandler(IUserRepository userRepository)
+    public GetUserByIdQueryHandler(IUserRepository userRepository, IMapper mapper)
     {
         _userRepository = userRepository;
+        _mapper = mapper;
     }
 
     public async Task<UserDTO> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
@@ -17,16 +19,7 @@ public class GetUserByIdQueryHandler : IQueryHandler<GetUserByIdQuery, UserDTO>
         {
             throw new Exception(nameof(User));
         }
-        var userDto = new UserDTO()
-        {
-            FullName = user.FullName,
-            LoyaltyDiscountStatus = user.LoyaltyDiscountStatus,
-            Email = user.Email,
-            Password = user.Password,
-            PhoneNumber = user.PhoneNumber,
-            TotalSpent = user.Orders.Sum(order => order.OrderItems.Sum(orderItem => orderItem.Price * orderItem.Quantity)),
-
-        };
+        var userDto = _mapper.Map<UserDTO>(user);
         return userDto;
     }
 }

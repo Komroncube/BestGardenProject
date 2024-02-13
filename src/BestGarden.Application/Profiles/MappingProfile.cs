@@ -10,9 +10,9 @@ public class MappingProfile : Profile
         CreateMap<User, UserDTO>()
             .ForMember(x => x.TotalSpent,
                 opt => opt.
-                                                                            MapFrom(x => x.Orders
-                                                                                                    .Sum(order => order.OrderItems
-                                                                                                        .Sum(item => item.Price * item.Quantity))));
+                MapFrom(x => x.Orders
+                            .Sum(order => order.OrderItems
+                                            .Sum(item => item.Price * item.Quantity))));
         CreateMap<UserDTO, User>();
         CreateMap<User, UserRegisterDTO>().ReverseMap();
         CreateMap<Catalog, CatalogCreateDTO>().ReverseMap();
